@@ -3,7 +3,6 @@ import throttle from 'lodash.throttle';
 const form = document.querySelector('.feedback-form');
 
 const formBtn = document.querySelector('.feedback-form button');
-// console.log(formBtn);
 
 const formData = { email: '', message: '' };
 
@@ -13,7 +12,7 @@ function restoreFormData() {
     localStorage.getItem('feedback-form-state')
   );
   if (restoreFormData) {
-    console.log(restoreFormData);
+    // console.log(restoreFormData);
     form.email.value = restoreFormData.email;
     form.message.value = restoreFormData.message;
     formData.email = restoreFormData.email;
@@ -43,8 +42,6 @@ function handlerFormInputData(event) {
   //   console.log(event.currentTarget.elements.message.value);
 
   formData[event.target.name] = event.target.value;
-  console.log(event.target.value);
-  console.log(formData);
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 }
 

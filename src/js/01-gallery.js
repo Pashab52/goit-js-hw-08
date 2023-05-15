@@ -5,7 +5,7 @@ import { galleryItems } from './gallery-items';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 const galleryMarkup = galleryItems
   .map(({ preview, original, description }) => {
@@ -32,4 +32,4 @@ let gallery = new SimpleLightbox('.gallery a', {
   disableScroll: false,
 });
 
-console.log(gallery);
+// console.log(gallery);
