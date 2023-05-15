@@ -2,7 +2,7 @@ import Player from '@vimeo/player';
 
 var throttle = require('lodash.throttle');
 
-STORAGE_KEY = 'videoplayer-current-time';
+const STORAGE_KEY = 'videoplayer-current-time';
 
 const player = new Player('vimeo-player');
 

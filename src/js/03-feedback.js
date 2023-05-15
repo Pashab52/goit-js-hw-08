@@ -6,7 +6,7 @@ const formBtn = document.querySelector('.feedback-form button');
 
 const formData = { email: '', message: '' };
 
-STORAGE_KEY = 'feedback-form-state';
+const STORAGE_KEY = 'feedback-form-state';
 
 restoreFormData();
 function restoreFormData() {
